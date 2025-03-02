@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.canvas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vh;
+  height: 60%;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-image {
+  width: 50%;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3vh;
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.card-info > * {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.product-type {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.product-name {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  color: hsl(212, 21%, 14%);
+  font-size: 2.5rem;
+  line-height: 2.3rem;
+}
+
+.product-desc {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.sale-price {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.base-price {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  vertical-align: super;
+  text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  gap: 1rem;
+  width: 100%;
+  height: 6vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.add-to-cart-btn:hover {
+  cursor: pointer;
+  background-color: hsl(158, 42%, 18%);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 32rem;
+    height: 92%;
+    margin: 1rem;
+  }
+  .card-image {
+    width: 100%;
+    height: 40%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .card-info {
+    gap: 2.2vh;
+    width: 100%;
+    height: 60%;
+  }
+  .product-name {
+    font-size: 2.5em;
+    line-height: 2.5rem;
+  }
+  .product-desc {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .sale-price {
+    font-size: 2.8rem;
+  }
+  .add-to-cart-btn {
+    height: 7vh;
+    font-weight: 700;
+  }
+}
